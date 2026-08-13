@@ -1,11 +1,12 @@
-
+import {Header} from "./Header.jsx"
+import { HeroSection } from "./HeroSection.jsx"
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-     <h1>Initailizing...</h1>
-     <h1>Testing...</h1>
+     <Header />
+     <HeroSection />
     </>
   )
 }
