@@ -76,7 +76,8 @@ body{
 } */
 .bar {
     width: 25px;
-    height: 3px;
+    height: 4px;
+    border-radius: 4px;
     background: #1b1b1b;
 }
 
@@ -173,22 +174,25 @@ body{
     background: #1b1b1b;
     transform: rotate(45deg);
     width: 25px;
-    height: 3px;
+    height: 4px;
+    border-radius: 4px;
     position: relative;
-    top: 6px;
+    top: 7px;
 }
 .bar-style2{
      /* background: rgb(11, 184, 63); */
     transform: rotate(45deg);
     width: 25px;
-    height: 3px;
+    height: 4px;
+    border-radius: 4px;
 }
 .bar-style3{
     background: #1b1b1b;
     transform: rotate(-45deg);
     position: relative;
-    top: -6px;
+    top: -7px;
     /* right: 2px; */
     width: 25px;
-    height: 3px;
+    height: 4px;
+    border-radius: 4px;
 }
