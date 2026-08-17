@@ -33,6 +33,7 @@ export const Header = () => {
                     <span className={!isClickBar3 ? "bar" : "bar-style3"}></span>
                     
                 </div>
+                {/* <button onClick={(() => console.log("Clicked"))}>Click</button> */}
             </div>
         </header>
         </div>

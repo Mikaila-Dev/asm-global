@@ -20,7 +20,7 @@ body{
 }
 .logo-name {
     color: #ffb01e;
-    font-size: clamp(0.9rem, 3vw, 4rem);
+    font-size: clamp(1.2rem, 3vw, 4rem);
     font-weight: bold;
 }
 .nav-links {
@@ -155,17 +155,22 @@ body{
 .hero {
     position: absolute;
     top: 50vh;
-    z-index: -1;
+    z-index: 3000;
+    /* z-index: -1; */
     font-family: "Montserrat Alternates";
+    /* font-family: "Playwrite Deutschland Schulausgangschrift Guides"; */
+    /* font-family: "Montserrat"; */
     display: flex;
     flex-direction: column;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(11%);
+    width: 100%;
+    padding: 20px;
+    /* align-items: center;
+    justify-content: center; */
+    /* transform: translateX(11%); */
 }
 .hero h1 {
     font-size: clamp(0.9rem, 5vw, 7rem);
+    /* background: #1b1b1b; */
 }
 .hero p {
     font-size: clamp(0.7rem, 2.5vw, 3rem);
@@ -195,4 +200,35 @@ body{
     width: 25px;
     height: 4px;
     border-radius: 4px;
+}
+.all-in-one {
+    max-width: 300px;
+    margin-top: 20px;
+}
+.all-in-one-button {
+    /* background: rgb(255, 176, 40);
+    border: none;
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer; */
+
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(#ffb01ec4, #02021abb);
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.all-in-one-button:hover{
+    background: linear-gradient(#ffb01e, #02021a);
+   transform: translateY(-4px) scale(1.03);
+   animation: moveGradient 1s linear infinite;
+   box-shadow: 0 10px 25px #ffb01e70;
 }
