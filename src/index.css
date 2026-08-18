@@ -17,6 +17,7 @@ body{
     /* box-shadow: 0px 0px 2px #adacac; */
     position: fixed;
     width: 100%;
+    z-index: 3000000;
 }
 .logo-name {
     color: #ffb01e;
@@ -96,8 +97,8 @@ body{
         position: absolute;
         top: 80px;
         background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent color */
-        backdrop-filter: blur(30px);                  /* Blurs the content behind */
-       -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(30px);                  /* Blurs the content behind */
+    -webkit-backdrop-filter: blur(10px);
         z-index: 1000;
         width: 100%;
         left: 0;
@@ -130,7 +131,7 @@ body{
         z-index: 200; */
         height: 30px;
         border-radius: 15px;
-        border: 1.5px solid #ffb01e;
+        border: 1.5px solid #ffb01e3b;
     }
     .nav-links li a, .show li a {
         /* background: #ffb01e44; */
@@ -153,11 +154,12 @@ body{
 }
 }
 .hero {
-    position: absolute;
-    top: 50vh;
-    z-index: 3000;
+    position: relative;
+    top: 40vh;
+    /* z-index: ; */
     /* z-index: -1; */
-    font-family: "Montserrat Alternates";
+    /* font-family: "Montserrat Alternates"; */
+    font-family: "Poppins";
     /* font-family: "Playwrite Deutschland Schulausgangschrift Guides"; */
     /* font-family: "Montserrat"; */
     display: flex;
@@ -214,7 +216,6 @@ body{
     border-radius: 40px;
     color: white;
     cursor: pointer; */
-
   padding: 14px 30px;
   border: none;
   border-radius: 30px;
@@ -227,8 +228,120 @@ body{
   transition: transform 0.1s ease;
 }
 .all-in-one-button:hover{
-    background: linear-gradient(#ffb01e, #02021a);
+   background: linear-gradient(#ffb01e, #02021a);
    transform: translateY(-4px) scale(1.03);
    animation: moveGradient 1s linear infinite;
    box-shadow: 0 10px 25px #ffb01e70;
+}
+.second-display {
+    display: none;
+}
+@media(max-width: 768px){
+    /* .hero {
+
+    } */
+    .all-in-one-button {
+        padding: 14px 30px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(#ffb01ec4, #02021abb);
+        width: 100%;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        display: none;
+        transition: transform 0.1s ease;
+    }
+    .all-in-one-button:hover {
+        background: linear-gradient(#ffb01e, #02021a);
+        transform: translateY(0px) scale(1.03);
+        animation: moveGradient 1s linear infinite;
+        box-shadow: 0 10px 25px #ffb01e70;
+    }
+    .second-display {
+        padding: 14px 30px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(#ffb01ec4, #02021abb);
+        width: 100%;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.1s ease;
+    }
+    .second-display:hover {
+        background: linear-gradient(#ffb01e, #02021a);
+        transform: translateY(0px) scale(1.03);
+        box-shadow: 0 10px 25px #ffb01e70;
+    }
+}
+.services-section {
+    position: relative;
+    top: 80vh;
+    background: black;
+    font-family: "poppins";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.services-section h3 {
+    /* margin: 10px; */
+    margin-bottom: -30px;
+}
+.services-section .p {
+    text-align: center; /* Yanawa rubutun da yake ciki tsakiya */
+  max-width: 600px;  /* Yana kayyade faɗin rubutun domin yayi wrapping */
+  margin: 30px auto;
+  color: rgba(255, 255, 255, 0.705);
+}
+.phone-accessories {
+    background: linear-gradient(135deg, #ffb01e7e 0%, #02021a83 70%);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    min-height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(20px);
+
+}
+.phone-accessories h3 {
+    margin: 20px auto;
+    /* margin-top: 20px; */
+    text-align: center;
+}
+.phone-accessories p {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    /* margin-top: 20px; */
+}
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* flex-direction: column; */
+    gap: 5px;
+    margin: 20px 0;
+}
+.service-tags span {
+    background: #02021a3f;
+    border: 2px solid rgba(182, 172, 172, 0.096);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 10px;
+    /* width: 20%; */
+    display: flex;
+    margin: 0 10px;
+    /* margin-top: 20px; */
+    /* flex-wrap: nowrap; */
 }
