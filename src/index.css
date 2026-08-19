@@ -147,7 +147,7 @@ body{
         display: flex;
      }
 }
-@media (max-width: 350px){
+@media (max-width: 400px){
     .menu {
     display: flex;
     gap: 15px;
@@ -290,10 +290,17 @@ body{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    /* gap: 20px; */
+}
+.sercices-heading {
+    font-size: clamp(2rem, 10vw, 4rem);
+    margin-bottom: -30px;
+    /* font-family: "Playwrite Deutschland Schulausgangschrift Guides"; */
+       font-family: "Montserrat Alternates";
 }
 .services-section h3 {
-    /* margin: 10px; */
-    margin-bottom: -30px;
+    /* font-size: 6rem;
+    margin-bottom: -30px; */
 }
 .services-section .p {
     text-align: center; /* Yanawa rubutun da yake ciki tsakiya */
@@ -301,9 +308,31 @@ body{
   margin: 30px auto;
   color: rgba(255, 255, 255, 0.705);
 }
+/* .main-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
+@media (max-width: 1440px){
+   .main-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+@media (max-width: 768px){
+    .main-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media(max-width: 540px){
+    .main-services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
 .phone-accessories {
     background: linear-gradient(135deg, #ffb01e7e 0%, #02021a83 70%);
-    max-width: 400px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     /* text-align: center; */
@@ -312,6 +341,7 @@ body{
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.233);
     backdrop-filter: blur(20px);
+    cursor: pointer;
 
 }
 .phone-accessories h3 {
@@ -323,13 +353,11 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0 10px;
-    /* margin-top: 20px; */
 }
 .service-tags {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    /* flex-direction: column; */
     gap: 5px;
     margin: 20px 0;
 }
@@ -342,6 +370,68 @@ body{
     /* width: 20%; */
     display: flex;
     margin: 0 10px;
-    /* margin-top: 20px; */
-    /* flex-wrap: nowrap; */
+}
+.airtime-and-data-section {
+    background: linear-gradient(135deg, #ffb01e7e 0%, #02021a83 70%);
+    max-width: 500px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(20px);
+}
+.airtime-and-data-section h3 {
+    margin: 20px auto;
+    text-align: center;
+}
+.airtime-and-data-section p {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+.movies-container {
+    background: linear-gradient(135deg, #ffb01e7e 0%, #02021a83 70%);
+    max-width: 500px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(20px);
+}
+.movies-container h3 {
+    margin: 20px auto;
+    text-align: center;
+}
+.movies-container p {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.drinks {
+    background: linear-gradient(135deg, #ffb01e7e 0%, #02021a83 70%);
+    max-width: 500px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(20px);
+}
+.drinks h3 {
+    margin: 20px auto;
+    text-align: center;
+}
+.drinks p {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
 }
