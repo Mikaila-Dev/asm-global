@@ -6,12 +6,12 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div style={{gap: "0px", display: "flex", flexDirection: "column"}}>
      <Header />
      <HeroSection />
      <ServicesSection />
      <WhyChooseUs />
-    </>
+    </div>
   )
 }
 

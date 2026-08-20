@@ -1,12 +1,13 @@
 
 
 export const ServicesSection = () => {
+  // style={{color: "#ffffffd5"}} 
     return(
-    <div className="services-section">
-         <h3 style={{color: "white"}} className="sercices-heading">What We Offer</h3>
+    <div style={{color: "#ffffffce"}} className="services-section">
+         <h3 className="sercices-heading">What We Offer</h3>
     <div className="p">Quality products and reliable services, all in one convenient place.</div>
     <div style={{gap: "20px"}} className="main-services">
-    <div className="phone-accessories" style={{color: "white"}}>
+    <div style={{color: "#ffffffce"}}  className="phone-accessories" >
     <h3>Phone Accessories</h3>
     <p>
     Find reliable phone accessories made to keep your devices
@@ -22,7 +23,7 @@ export const ServicesSection = () => {
 </div>
 
 
-<div className="airtime-and-data-section" style={{color: "white"}}>
+<div className="airtime-and-data-section" style={{color: "#ffffffce"}}>
 <h3>Data & Airtime</h3>
 <p>
   Stay connected with fast, reliable data and airtime services,
@@ -38,7 +39,7 @@ export const ServicesSection = () => {
     </div>
   </div>
 
-<div className="movies-container" style={{color: "white"}}>
+<div className="movies-container" style={{color: "#ffffffce"}}>
 <h3>Movies</h3>
 <p>
   Enjoy your favorite Kannywood and Bollywood movies,
@@ -53,7 +54,7 @@ export const ServicesSection = () => {
 </div>
 
 
-<div className="drinks" style={{color: "white"}}>
+<div className="drinks" style={{color: "#ffffffce"}}>
     <h3>Cold Drinks</h3>
 
 <p>
