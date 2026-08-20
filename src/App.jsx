@@ -1,6 +1,7 @@
 import { Header } from "./Header.jsx"
 import { HeroSection } from "./HeroSection.jsx"
 import { ServicesSection } from "./ServicesSection.jsx"
+import { WhyChooseUs } from "./WhyChooseUs.jsx"
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -9,6 +10,7 @@ function App() {
      <Header />
      <HeroSection />
      <ServicesSection />
+     <WhyChooseUs />
     </>
   )
 }

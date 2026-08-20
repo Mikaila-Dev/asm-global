@@ -283,7 +283,13 @@ body{
 .services-section {
     position: relative;
     top: 80vh;
-    background: black;
+    /* background: black; */
+    background: linear-gradient(
+    290deg,  
+    #ffb01e 0%,
+    #02021a 25%, 
+    #000000 60%,
+    #000000 100%);
     font-family: "poppins";
     display: flex;
     flex-direction: column;
@@ -331,7 +337,7 @@ body{
 }
 }
 .phone-accessories {
-    background: linear-gradient(135deg, #ffb01e7e 0%, #02021a83 70%);
+    background: linear-gradient(190deg, #ffb01e7e 0%, #02021a83 70%);
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -342,7 +348,13 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.233);
     backdrop-filter: blur(20px);
     cursor: pointer;
-
+    transition: all 0.4s ease;
+    opacity: 0.9;
+}
+.phone-accessories:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    box-shadow: 0 10px 30px #ffb01e7e;
 }
 .phone-accessories h3 {
     margin: 20px auto;
@@ -366,13 +378,14 @@ body{
     border: 2px solid rgba(182, 172, 172, 0.096);
     border-radius: 10px;
     padding: 5px;
-    font-size: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
     /* width: 20%; */
     display: flex;
     margin: 0 10px;
 }
 .airtime-and-data-section {
-    background: linear-gradient(135deg, #ffb01e7e 0%, #02021a83 70%);
+    background: linear-gradient(260deg, #ffb01e7e 0%, #02021a83 70%);
     max-width: 500px;
     display: flex;
     cursor: pointer;
@@ -382,6 +395,13 @@ body{
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.233);
     backdrop-filter: blur(20px);
+    transition: all 0.4s ease;
+    opacity: 0.9;
+}
+.airtime-and-data-section:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 30px #ffb01e7e;
+      opacity: 1;
 }
 .airtime-and-data-section h3 {
     margin: 20px auto;
@@ -393,7 +413,7 @@ body{
     margin: 0 10px;
 }
 .movies-container {
-    background: linear-gradient(135deg, #ffb01e7e 0%, #02021a83 70%);
+    background: linear-gradient(90deg, #ffb01e7e 0%, #02021a83 70%);
     max-width: 500px;
     display: flex;
     cursor: pointer;
@@ -403,6 +423,13 @@ body{
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.233);
     backdrop-filter: blur(20px);
+    transition: all 0.4s ease;
+    opacity: 0.9;
+}
+.movies-container:hover {
+    opacity: 1;
+    transform: scale(1.01);
+    box-shadow: 0 10px 30px #ffb01e7e;
 }
 .movies-container h3 {
     margin: 20px auto;
@@ -425,6 +452,14 @@ body{
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.233);
     backdrop-filter: blur(20px);
+    transition: all 0.4s ease;
+    opacity: 0.9;
+}
+.drinks:hover {
+    opacity: 1;
+    transform: scale(1.01);
+    box-shadow: 0 10px 30px #ffb01e7e;
+    
 }
 .drinks h3 {
     margin: 20px auto;
