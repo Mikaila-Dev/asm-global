@@ -29,8 +29,8 @@ export function HeroSection(){
 
         <div className="hero-buttons">
             <div  className="all-in-one">
-            <button onMouseLeave={mousel} onMouseMove={mouse} ref={mouses}  onClick={click} className="all-in-one-button">Shop Now</button>
-            <button className="second-display">Shop Now</button>
+            <div onMouseLeave={mousel} onMouseMove={mouse} ref={mouses}  onClick={click} className="all-in-one-button">Shop Now</div>
+            <div className="second-display">Shop Now</div>
             </div>
         </div>
         </div>
